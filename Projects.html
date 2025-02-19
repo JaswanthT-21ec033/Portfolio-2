@@ -1,0 +1,184 @@
+<IDOCTYPE html>
+    <html lang="en">
+    <head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="TE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.6"> 
+    <title>JASWANTH T</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Projects.css"> 
+    <link rel="stylesheet" href="mediaqueries.css"> 
+
+    <style>
+          
+          body {
+    background: black;
+    height: auto;  
+    margin: auto;  
+    overflow-x: hidden;  
+    overflow-y: auto;  
+}
+
+canvas {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+    </style>
+    </head> 
+    <body> 
+       
+        
+        <script src="Matrix.js"></script>
+        <script src="Page Transition.js"></script>
+        <script src="mediaqueries.css"></script>
+        
+        <script>
+            function spark(event){
+                let j = document.createElement('j');
+                j.style.left = (event.pageX) + 'px';
+                j.style.top = (event.pageY) + 'px';
+                // to add random shape
+                j.style.scale = `${Math.random() * 2 + 1}`;
+    
+                // randomly set some property. --x and --y is the name of variable
+                // The i.style.setProperty function is used to set CSS custom properties (variables) directly on an element's style object.
+                j.style.setProperty('--x', getRandomTransitionValue());
+                j.style.setProperty('--y', getRandomTransitionValue());
+    
+                document.body.appendChild(j);
+    
+                setTimeout(() => {
+                    document.body.removeChild(j);
+                }, 2000);
+            }
+    
+            function getRandomTransitionValue(){
+                return `${Math.random() * 400 - 200}px`;
+            }
+    
+            document.addEventListener('mousemove', spark);
+        </script>
+        <nav class="navbar"> 
+            <a href="#" class="glitch" data-text="My Portfolio">My Portfolio</a> 
+            <ul>
+                <li ><a href="index.html">About</a></li>
+            <li ><a href="Skills.html">Skills</a></li>
+            <li class="active"><a href="Projects.html">Projects</a></li>
+            <li><a href="Internship.html">Internship</a></li>
+           
+            </ul>
+            </nav> 
+            
+        
+           
+            
+          <div class="bars-animation">
+                <div class="bar" style="--i:6;"></div>
+                <div class="bar" style="--i:5;"></div>
+                <div class="bar" style="--i:4;"></div>
+                <div class="bar" style="--i:3;"></div>
+                <div class="bar" style="--i:2;"></div>
+                <div class="bar" style="--i:1;"></div>
+
+          </div>
+          
+          <section class="home">
+            <div class="home-info">
+                
+            </div>
+    
+            <!-- Hardware Projects -->
+            <h2 class="experience-sub-title">Hardware Projects</h2>
+            <div class="article-container">
+                <article>
+                    <div>
+                        <h3>Sun Tracking Solar Panel</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Bass Booster using IC741</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Auto Greeting System using PIR Sensor</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Ultrasonic Radar using Arduino and Processing Software</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Home Automation using IOT</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Enhancing Safety Mechanism for the Motorcycles</h3>
+                    </div>
+                </article>
+            </div>
+    
+            <!-- Software Projects -->
+            <h2 class="experience-sub-title">Software Projects</h2>
+            <div class="article-container">
+                <article>
+                    <div>
+                        <h3>Helmet Detection using Deep Learning </h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Object Detection using YOLO  </h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Heart Disease Detection using Machine Learning  </h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Car Rental System using Backend</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Pets Management using Backend</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Product Landing Page</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Weather Forecast Website</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Simple Calculator using HTML</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Stone Paper Scissor using frontend</h3>
+                    </div>
+                </article>
+               
+            </div>
+        </section>
+        
+
+          
+    </body> 
+    </html> 

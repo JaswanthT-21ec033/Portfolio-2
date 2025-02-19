@@ -1,0 +1,116 @@
+<IDOCTYPE html>
+    <html lang="en">
+    <head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="TE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.6"> 
+    <title>JASWANTH T</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Internship.css"> 
+  
+
+    <style>
+          
+          body {
+    background: black;
+  
+    margin: auto;  
+    height: auto;  
+    margin: auto;  
+    overflow: hidden;  
+    
+}
+
+canvas {
+        position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                z-index: -1;
+}
+    </style>
+    </head> 
+    <body> 
+       
+        
+        <script src="Matrix.js"></script>
+        <script src="Page Transition.js"></script>
+        <script src="mediaqueries.css"></script>
+        
+        <script>
+            function spark(event){
+                let j = document.createElement('j');
+                j.style.left = (event.pageX) + 'px';
+                j.style.top = (event.pageY) + 'px';
+                // to add random shape
+                j.style.scale = `${Math.random() * 2 + 1}`;
+    
+                // randomly set some property. --x and --y is the name of variable
+                // The i.style.setProperty function is used to set CSS custom properties (variables) directly on an element's style object.
+                j.style.setProperty('--x', getRandomTransitionValue());
+                j.style.setProperty('--y', getRandomTransitionValue());
+    
+                document.body.appendChild(j);
+    
+                setTimeout(() => {
+                    document.body.removeChild(j);
+                }, 2000);
+            }
+    
+            function getRandomTransitionValue(){
+                return `${Math.random() * 400 - 200}px`;
+            }
+    
+            document.addEventListener('mousemove', spark);
+        </script>
+        <nav class="navbar"> 
+            <a href="#" class="glitch" data-text="My Portfolio">My Portfolio</a> 
+            <ul>
+                <li ><a href="index.html">About</a></li>
+            <li ><a href="Skills.html">Skills</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li class="active"><a href="Internship.html">Internship</a></li>
+           
+            </ul>
+            </nav> 
+            
+        
+           
+            
+          <div class="bars-animation">
+                <div class="bar" style="--i:6;"></div>
+                <div class="bar" style="--i:5;"></div>
+                <div class="bar" style="--i:4;"></div>
+                <div class="bar" style="--i:3;"></div>
+                <div class="bar" style="--i:2;"></div>
+                <div class="bar" style="--i:1;"></div>
+
+          </div>
+          
+          <section class="home">
+            <div class="home-info">
+                
+            </div>
+    
+            <!-- Hardware Projects -->
+            <h2 class="experience-sub-title">Internships</h2>
+            <div class="article-container">
+                <article>
+                    <div>
+                        <h2 class="experience-sub-title project-title">Emerging Technologies (AI & Cloud)</h2>
+                        <h3>5th June 2024 to 2nd July 2024<br>Edunet Foundation</h3>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h2 class="experience-sub-title project-title">Full Stack Web Development</h2>
+                        <h3>15th Jan 2025 to 26th Feb 2025<br>Slash Mark</h3>
+                    </div>
+                </article>
+               
+        </section>
+        
+
+          
+    </body> 
+    </html> 

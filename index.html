@@ -1,0 +1,137 @@
+<IDOCTYPE html>
+    <html lang="en">
+    <head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="TE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.6"> 
+    <title>JASWANTH T </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css"> 
+   
+    <style>
+          
+        body {
+        background: black;
+        height: auto;  
+        margin: auto;  
+        overflow:hidden;
+        }   
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+    </style>
+    </head> 
+    <body> 
+       
+        
+        <script src="Matrix.js"></script>
+        <script src="Page Transition.js"></script>
+  
+        
+        <script>
+            function spark(event){
+                let j = document.createElement('j');
+                j.style.left = (event.pageX) + 'px';
+                j.style.top = (event.pageY) + 'px';
+                // to add random shape
+                j.style.scale = `${Math.random() * 2 + 1}`;
+    
+                // randomly set some property. --x and --y is the name of variable
+                // The i.style.setProperty function is used to set CSS custom properties (variables) directly on an element's style object.
+                j.style.setProperty('--x', getRandomTransitionValue());
+                j.style.setProperty('--y', getRandomTransitionValue());
+    
+                document.body.appendChild(j);
+    
+                setTimeout(() => {
+                    document.body.removeChild(j);
+                }, 2000);
+            }
+    
+            function getRandomTransitionValue(){
+                return `${Math.random() * 400 - 200}px`;
+            }
+    
+            document.addEventListener('mousemove', spark);
+        </script>
+        <nav class="navbar"> 
+            <a href="#" class="glitch" data-text="My Portfolio">My Portfolio</a> 
+            <ul>
+                <li class="active"><a href="About.html">About</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Internship.html">Internship</a></li>
+           
+            </ul>
+            </nav> 
+            
+        
+           
+            
+          <div class="bars-animation">
+                <div class="bar" style="--i:6;"></div>
+                <div class="bar" style="--i:5;"></div>
+                <div class="bar" style="--i:4;"></div>
+                <div class="bar" style="--i:3;"></div>
+                <div class="bar" style="--i:2;"></div>
+                <div class="bar" style="--i:1;"></div>
+
+          </div>
+          
+
+        
+
+            <section class="home">
+                <div class="home-info">
+                   
+                <h2>Jaswanth T</h2>
+                <h3>
+                    <span style="--i:4;" data-text="Full-Stack Developer">Full-Stack Developer</span>
+                    <span style="--i:3;" data-text="AI/ML Engineer">AI/ML Engineer</span>
+                    <span style="--i:2;" data-text="Embedded System Engineer">Embedded System Engineer</span>
+                    <span style="--i:1;" data-text="Software Developer">Software Developer</span>
+                </h3>
+                <p> To work in an environment that encourages me to utilize my knowledge and learn new things and to 
+                    synchronize my growth along with the Organization. To seek a challenging position in the Organization 
+                    where I can effectively put my skills for the success of the Organization.</p>
+                <div class="btn-sci">
+                    <a href="https://drive.google.com/file/d/1kKHBp5g7vJtzs7mrDBb1S5kaRI1KQsap/view?usp=sharing" class="btn" target="_blank">Download CV</a>
+
+                    <div class="sci">
+                        <a href="https://github.com/JaswanthT-21ec033" target="_blank">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jaswanth-t-2aab1422a/" target="_blank">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="mailto:jaswanth9611@gmail.com">
+                            <i class='bx bxl-gmail'></i>
+                        </a>
+                    </div>
+                
+                </div>
+                </div>
+                </div>
+                
+
+                <div class="home-img"> 
+                    <div class="img-box"> 
+                    <div class="img-item"> 
+                    
+                    <img src="jas.png">
+                    
+                    </div> 
+                    
+                    </div>
+                    </div> 
+
+                    
+                        </section>
+                 
+          
+    </body> 
+    </html> 

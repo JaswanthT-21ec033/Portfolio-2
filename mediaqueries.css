@@ -1,0 +1,266 @@
+@media (max-width: 600px) {
+    .navbar {
+        position: fixed;
+        top: 10;
+        left: -30;
+        width: 100%;
+        padding: 35px 9%;
+        display: flex;      
+        
+    }
+}
+@media (max-width: 600px) {
+    /* Navbar Styling */
+    .glitch {
+        left:65px;
+        color: rgb(15, 241, 7);
+        position: relative;
+        font-size: 2vw; /* Adjusts based on screen width */
+        font-weight: 600;
+        animation: glitch 2s infinite;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    }
+
+@media (max-width: 600px) {
+    /* Navbar Styling */
+    .navbar {
+        display: relative;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        z-index: 1000;
+    }
+
+    /* Logo */
+    .navbar .glitch {
+        font-size: 30px;
+        font-weight: 800;
+        
+    }
+
+    /* Hide Default Menu and Use a Mobile Menu */
+    .navbar ul {
+        display: flex; /* Hide menu by default on mobile */
+        position: absolute;
+        top: 70px;
+        left: -20;
+        width: 9%;
+        background: transparent;
+        flex-direction: row;
+        text-align: inline-block ;
+        padding: 10px 0;
+    }
+ 
+    /* Show Menu When Active */
+    .navbar.active ul {
+        display: flex;
+        
+    }
+
+    .navbar ul li {
+        list-style: none;
+        padding: 10px 0;
+        
+    }
+    .navbar ul li a:last-child {
+        width: 100%; /* Takes full width */
+        text-align: center; /* Centers the item */
+        margin-top: 10px; /* Adds space between rows */
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #00ff37;
+        transition: 0.3s;
+    }
+
+    .navbar ul li:hover a {
+        color: #273227;
+    }
+
+    /* Mobile Menu Button */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        color: #06f435;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+
+    .btn { 
+        
+        display: inline-block; 
+        padding: 16px 30px;
+        background: transparent;
+        border: 2px solid #ffffff; 
+        border-radius: 40px; 
+    
+        font-size: 16px;
+        color: #04fe2e; 
+        font-weight: 600;
+        transition: .5s;
+    
+    } 
+    
+    
+    .btn:hover {
+    background: transparent;
+    color: #62f103;
+    box-shadow: 0 0 50px;
+    
+    }
+    .home-info .btn-sci .sci  { 
+    margin-left: 20px; 
+    display: inline-flex; 
+} 
+}
+
+    
+.home-info .btn-sci .sci a { 
+    display: inline-flex; 
+    padding: 8px; 
+    border: 2px solid #f6f9f4; 
+    border-radius: 50%; 
+    font-size: 20px; 
+    color: #04fe2e; 
+    margin: 0 8px; 
+    transition: .5s;
+}
+
+
+ .home-info .btn-sci .sci a:hover {
+    background: transparent;
+    color: #04fe2e; 
+    box-shadow: 0 0 50px ;
+    }
+  
+
+
+@media (max-width: 600px) {
+        .home-img .img-box { 
+            width: 50vw;   /* Reduced size for mobile */
+            height: 50vw;  /* Reduced size for mobile */
+        }
+    
+        .home-img .img-box::before,
+        .home-img .img-box::after {
+            width: 300px;  /* Smaller border size for mobile */
+            height: 300px; /* Smaller border size for mobile */
+        }
+    
+        .home-img .img-box .img-item {
+            width: 90vw;   /* Image container width adjusted */
+            height: 90vw;  /* Image container height adjusted */
+        }
+    
+        .home-img .img-box .img-item img {
+            width: 100%;   /* Make image fill the container */
+            height: 100%;  /* Make image fill the container */
+            transform: scale(1); /* Reset scale for smaller screens */
+        }
+    }
+    
+    /* Media Query for screens between 601px and 1200px (Tablet to Small Desktop) */
+    @media (max-width: 600px) {
+        .home-img .img-box { 
+            width: 25vw;   /* Slightly smaller than base for tablets */
+            height: 25vw;  /* Slightly smaller than base for tablets */
+        }
+    
+        .home-img .img-box::before,
+        .home-img .img-box::after {
+            width: 400px;  /* Adjust rotating border for tablet */
+            height: 400px; /* Adjust rotating border for tablet */
+        }
+    
+        .home-img .img-box .img-item {
+            width: 80vw;   /* Adjust image container for tablet */
+            height: 80vw;  /* Adjust image container for tablet */
+        }
+    
+        .home-img .img-box .img-item img {
+            width: 100%;   /* Make image fill the container */
+            height: 100%;  /* Make image fill the container */
+            transform: scale(1); /* Reset scale for tablet screens */
+        }
+    }
+    
+    /* Media Query for larger screens */
+    @media (max-width: 600px) {
+        .home-img .img-box { 
+            width: 32vw;   /* Default size for larger screens */
+            height: 32vw;  /* Default size for larger screens */
+        }
+    
+        .home-img .img-box::before,
+        .home-img .img-box::after {
+            width: 500px;  /* Default border size */
+            height: 500px; /* Default border size */
+        }
+    
+        .home-img .img-box .img-item {
+            width: 100%;   /* Image container full size */
+            height: 100%;  /* Image container full size */
+        }
+    
+        .home-img .img-box .img-item img {
+            width: 110%;   /* Image slightly larger than container */
+            height: 110%;  /* Image slightly larger than container */
+            transform: scale(1.1); /* Slight zoom for larger screens */
+        }
+    }
+    @media (max-width: 600px) {
+    .home {
+        display: absolute;
+        left: -10;
+        align-items: center; 
+        gap: 80px;
+        height: 100vh;
+        padding: 68px 9% 0; 
+        color: #13f252; 
+        visibility: hidden;
+        opacity: 0;
+        animation: show-content 1.5s linear forwards;
+        animation-delay: 1.2s;
+    }
+    
+    .home-info h2 {
+        font-size: 65px;
+        
+    }
+         
+    .home-info h3 {
+        display: inline-block;
+        font-size: 32px;
+        margin-top: -10px;
+    }
+    
+    .home-info h3 span {
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        -webkit-text-stroke: .7px #04fe2e;
+        animation: display-text 16s linear infinite;
+        animation-delay: calc(-4s * var(--i));
+    }
+    }
